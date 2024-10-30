@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Yes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .popup {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="popup">
+    <h2>Grrrrrr Yes ba, di maminaw sa instruction!!! Would you like to go out on November 4, 2024 after your work?</h2>
+    <button class="yes" onclick="redirectYes()">Yes</button>
+    <button class="no" onclick="redirectNo()">No</button>
+</div>
+
+<script>
+    function redirectYes() {
+        window.location.href = "confirm.html"; // Replace with the actual URL you want to redirect to
+    }
+
+    function redirectNo() {
+        location.reload(); // This refreshes the page
+    }
+</script>
+
+</body>
+</html>
