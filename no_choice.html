@@ -12,10 +12,9 @@
             align-items: center;
             height: 100vh;
             font-family: Arial, sans-serif;
-            background-color: #e0f7fa;
-            color: #00796b;
+            background-color: #f0f0f0;
         }
-        .message {
+        .popup {
             background: white;
             padding: 20px;
             border-radius: 10px;
@@ -23,23 +22,40 @@
             text-align: center;
         }
         button {
-            margin-top: 20px;
+            margin: 10px;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            background-color: #00796b;
+        }
+        .yes {
+            background-color: #4CAF50;
             color: white;
         }
-        button:hover {
-            background-color: #004d40;
+        .no {
+            background-color: #f44336;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-<div class="message">
-    <h1>You have to choose Yes, please!!!</h1>
-    <p>We could have so much fun together! 😊</p>
-    <but
+<div class="popup">
+    <h2>You have to choose Yes, please!!! Would you like to go out on November 4, 2024 after your work?</h2>
+    <button class="yes" onclick="redirectYes()">Yes</button>
+    <button class="no" onclick="redirectNo()">No</button>
+</div>
+
+<script>
+    function redirectYes() {
+        window.location.href = "confirm.html"; // Replace with the actual URL you want to redirect to
+    }
+
+    function redirectNo() {
+        location.reload(); // This refreshes the page
+    }
+</script>
+
+</body>
+</html>
